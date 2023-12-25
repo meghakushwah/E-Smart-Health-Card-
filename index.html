@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health App | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Josefin+Sans&family=Kdam+Thmor+Pro&family=Poppins:wght@200&family=Quicksand&family=Rubik+Wet+Paint&family=Splash&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script defer src="./app.js"></script>
+</head>
+<body>
+    <nav id="nav">
+        <a id="nav_head" class = "nav-element" href="">HealthApp</a>
+        <a id="nav1" class = "nav-element" href="">HOME</a>
+        <a id="nav2" class = "nav-element" href="#about">ABOUT</a>
+        <a id="nav3" class = "nav-element" href="#contact-form">CONTACT</a>
+        <a id="nav4" class = "nav-element" href="#helpline">HELPLINE</a>
+    </nav>
+    <div class="container">
+        <div id="box1" class="flex-box1">
+            <div class="inner1">
+                <img id="main_img" src="main_img.png" alt="">
+            </div>
+        </div>
+        <div id="box2" class="flex-box2">
+            <div class="inner2 shadow p-3 mb-5 bg-white rounded">
+                <form id="user-login" action="#">
+                    <h2>User Login</h2><hr>
+                    <input id="email" class="border-secondary" type="email" placeholder="Enter email" required><br><br>
+                    <input id="password" class="border-secondary" type="password" placeholder="Enter password" required><br><br>
+                    <button id="login" type="submit" class="btn btn-primary">Login</button><br><br>
+                    <div id="login-alert" ><span id="login-alert-text">Invalid Credentials <br> Try Again:)</span></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas nobis quidem doloribus magni, cupiditate placeat assumenda! Impedit vitae id, iste maiores alias facere, nihil vero recusandae fugit perferendis doloremque harum adipisci explicabo consectetur ad illo ab accusamus exercitationem cum dicta ut? Soluta iure illo quos odio aliquid voluptatem ducimus laboriosam, fugiat alias nostrum recusandae at? Doloribus mollitia nostrum eveniet optio sunt voluptates nulla culpa id dignissimos obcaecati libero qui beatae illo quibusdam temporibus, quisquam aspernatur vero nesciunt ab exercitationem! Perspiciatis magnam tenetur atque dolorem facilis? Esse qui sapiente pariatur officia praesentium. Nostrum fugit repudiandae ipsam illum assumenda explicabo sapiente recusandae!</div>
+    <br><br>
+    <div class="container">
+        <h1 id="about">About us</h1><br>
+        <ul>
+            <li class="about-content">E-Health is being recognized as a method to improve the overall health status of the population.
+            </li><br>
+            <li class="about-content">It is important to build partnerships among health care providers, local community organizations, and national health care associations to ensure the continued development of e-Health initiatives.
+            </li><br>
+            <li class="about-content">The electronic health card system helps the user to see any documents, source code, tasks, activities, team information with details at the click of a button. 
+            </li><br>
+            <li class="about-content">The record data is maintained and backed up in such a way that data is not loss. The speed of the system could also increase.
+            </li>
+        </ul>
+    </div><br><br>
+    <div class="container1">
+        <div class="inner-contact">
+            <h1 id="contact">Contact Us</h1><br><br>
+        </div>
+        <div class="inner3">
+            <div class="inner-child3 shadow p-3 mb-5 bg-white rounded">
+                <form id="contact-form" action="#contact-name">
+                    <div id="success"><p class="btn btn-success">Form Submitted Successfully!</p></div>
+                    <label for="name">Name</label><br>
+                    <input id="contact-name" class="border border-secondary" type="text" required><br><br>
+                    <label for="number">Phone</label><br>
+                    <input id="contact-phone" class="border border-secondary" type="number" required><br><br>
+                    <label for="message">Message</label><br>
+                    <textarea id="contact-message" class="border border-secondary" name="message" id="" cols="30" rows="5" required></textarea><br><br>
+                    <div id="contact-submit"><button class=" btn btn-primary" type="submit">Submit</button></div><br>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="helpline" class="container2">
+        <h1 style="text-decoration: underline;">Helpline</h1><br><br>
+        <p class="btn btn-primary">Email: <span style="color: yellow;">healthapp@gmail.com </span> </p><br>
+        <p class="btn btn-warning">Phone: 123456789</p><br> 
+        <p class="btn btn-secondary">Address: VIT Hospitals, Kothri, Madhya Pradesh</p><br>
+        <a target="_blank" href="https://www.google.com/maps/dir/23.0791653,76.8605537/Vellore+Institute+of+Technology+-+VIT+Bhopal,+Kotri+Kalan,+Ashta,+Near,+Indore+Road,+Bhopal,+Madhya+Pradesh+466114/@23.0769173,76.8509463,16z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x397ce9ceaaaaaaab:0xa224b6b82b421f83!2m2!1d76.8512959!2d23.0774434!3e0"><img style="height: 300px; width:530px" src="map.png" alt=""></a>
+
+    </div><br><br>
+    <div style="visibility: hidden;" class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, dolorum.</div>
+    <hr>
+    <div style="text-align: center; font-weight: 400;" class="container">
+        <footer>
+        <p>Made with ❤️ by Group-9</p>
+    </footer>
+    </div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</body>
+</html>
